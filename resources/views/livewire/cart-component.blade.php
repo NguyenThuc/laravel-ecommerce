@@ -11,7 +11,7 @@
     <div class=" main-content-area">
     @if(Cart::instance('cart')->count() > 0)
         <div class="wrap-iten-in-cart">
-            @if(Session::has('success_message')) 
+            @if(Session::has('success_message'))
             <div class="alert alert-success">
                 <strong>Success ::</strong>{{Session::get('success_message')}}
             </div>
@@ -22,7 +22,7 @@
                 @foreach(Cart::instance('cart')->Content() as $item)
                 <li class="pr-cart-item">
                     <div class="product-image">
-                        <figure><img src="{{ asset ('assets/images/products/')}}/{{$item->model->image}}" alt="{{$item->model->name}}"></figure>
+                        <figure><img src=" {{ URL::asset ('assets/images/products/')}}/{{$item->model->image}}" alt="{{$item->model->name}}"></figure>
                     </div>
                     <div class="product-name">
                         <a class="link-to-product" href="{{route('product.details',['slug'=>$item->model->slug])}}">{{$item->model->name}}</a>
@@ -30,7 +30,7 @@
                     <div class="price-field produtc-price"><p class="price">${{$item->model->regular_price}}</p></div>
                     <div class="quantity">
                         <div class="quantity-input">
-                            <input type="text" name="product-quatity" value="{{$item->qty}}" data-max="120" pattern="[0-9]*" >									
+                            <input type="text" name="product-quatity" value="{{$item->qty}}" data-max="120" pattern="[0-9]*" >
                             <a class="btn btn-increase" href="#" wire:click.prevent="increaseQuntity('{{$item->rowId}}')"></a>
                             <a class="btn btn-reduce" href="#" wire:click.prevent="decreaseQuntity('{{$item->rowId}}')"></a>
                         </div>
@@ -43,7 +43,7 @@
                         </a>
                     </div>
                 </li>
-                @endforeach			
+                @endforeach
             </ul>
             @else
                 <p>No Item in Cart..!</p>

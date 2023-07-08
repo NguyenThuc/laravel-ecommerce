@@ -5,7 +5,7 @@
 			<div class="wrap-main-slide">
 				<div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
 					<div class="item-slide">
-						<img src="{{ asset ('assets/images/main-slider-1-1.jpg')}}" alt="" class="img-slide">
+						<img src=" {{ URL::asset ('assets/images/main-slider-1-1.jpg')}}" alt="" class="img-slide">
 						<div class="slide-info slide-1">
 							<h2 class="f-title">Kid Smart <b>Watches</b></h2>
 							<span class="subtitle">Compra todos tus productos Smart por internet.</span>
@@ -60,7 +60,7 @@
                         <div class="product product-style-2 equal-elem ">
                             <div class="product-thumnail">
                                 <a href="{{route('product.details',['slug'=>$product->slug])}}" title="{{$product->name}}">
-                                    <figure><img src="{{ asset('assets/images/products/')}}/{{$product->image}}" width="800" height="800" alt=""></figure>
+                                    <figure><img src=" {{ URL::asset('assets/images/products/')}}/{{$product->image}}" width="800" height="800" alt=""></figure>
                                 </a>
                                 <div class="group-flash">
                                     <span class="flash-item sale-label">sale</span>

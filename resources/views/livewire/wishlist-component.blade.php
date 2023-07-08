@@ -37,7 +37,7 @@
                     <div class="product product-style-3 equal-elem ">
                         <div class="product-thumnail">
                             <a href="{{route('product.details',['slug'=>$item->model->slug])}}" title="{{$item->model->name}}">
-                                <figure><img src=" {{ asset('assets/images/products/')}}/{{$item->model->image}}" alt="{{$item->model->name}}"></figure>
+                                <figure><img src="  {{ URL::asset('assets/images/products/')}}/{{$item->model->image}}" alt="{{$item->model->name}}"></figure>
                             </a>
                         </div>
                         <div class="product-info">
@@ -46,7 +46,7 @@
                             <a href="#" class="btn add-to-cart" wire:click.prevent="movewishlistProduct('{{$item->rowId}}')">Move To Cart</a>
                             <div class="product-wish">
                             <a href="#" wire:click.prevent="removeFromwishlist({{$item->model->id}})"><i class="fa fa-heart fill-heart"></i></a>
-                                
+
                             </div>
                         </div>
                     </div>

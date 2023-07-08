@@ -8,15 +8,15 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/animate.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/font-awesome.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/bootstrap.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/owl.carousel.min.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/flexslider.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/chosen.min.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/animate.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset('assets/css/flexslider.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/chosen.min.css')}}">
 
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/style.css')}}">
-	<link rel="stylesheet" type="text/css" href="{{ asset ('assets/css/color-01.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href=" {{ URL::asset ('assets/css/color-01.css')}}">
     @livewireStyles
 </head>
 <body class="home-page home-01 ">
@@ -46,12 +46,12 @@
 							<ul>
 
 								<li class="menu-item lang-menu menu-item-has-children parent">
-									<a title="English" href="#"><span class="img label-before"><img src="{{ asset ('assets/images/lang-en.png') }}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+									<a title="English" href="#"><span class="img label-before"><img src=" {{ URL::asset ('assets/images/lang-en.png') }}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="{{ asset ('assets/images/lang-ger.png')}}" alt="lang-ger" ></span>German</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="{{ asset ('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="{{ asset ('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>
+										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src=" {{ URL::asset('assets/images/lang-hun.png')}}" alt="lang-hun"></span>Hungary</a></li>
+										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src=" {{ URL::asset ('assets/images/lang-ger.png')}}" alt="lang-ger" ></span>German</a></li>
+										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src=" {{ URL::asset ('assets/images/lang-fra.png')}}" alt="lang-fre"></span>French</a></li>
+										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src=" {{ URL::asset ('assets/images/lang-can.png')}}" alt="lang-can"></span>Canada</a></li>
 									</ul>
 								</li>
 								<li class="menu-item menu-item-has-children parent" >
@@ -120,7 +120,7 @@
 					<div class="mid-section main-info-area">
 
 						<div class="wrap-logo-top left-section">
-							<a href="/" class="link-to-home"><img src="{{ asset ('assets/images/mycart--logo.png')}}" alt="mercado"></a>
+							<a href="/" class="link-to-home"><img src=" {{ URL::asset ('assets/images/mycart--logo.png')}}" alt="mercado"></a>
 						</div>
 							@livewire('header-search-component')
 
@@ -430,15 +430,15 @@
 		</div>
 	</footer>
 
-	<script src="{{ asset ('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
-	<script src="{{ asset ('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
-	<script src="{{ asset ('assets/js/bootstrap.min.js')}}"></script>
-	<script src="{{ asset ('assets/js/jquery.flexslider.js')}}"></script>
-	<!-- <script src="{{ asset ('assets/js/chosen.jquery.min.js')}}"></script> -->
-	<script src="{{ asset ('assets/js/owl.carousel.min.js')}}"></script>
-	<script src="{{ asset ('assets/js/jquery.countdown.min.js')}}"></script>
-	<script src="{{ asset ('assets/js/jquery.sticky.js')}}"></script>
-	<script src="{{ asset ('assets/js/functions.js')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/bootstrap.min.js')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/jquery.flexslider.js')}}"></script>
+	<!-- <script src=" {{ URL::asset ('assets/js/chosen.jquery.min.js')}}"></script> -->
+	<script src=" {{ URL::asset ('assets/js/owl.carousel.min.js')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/jquery.countdown.min.js')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/jquery.sticky.js')}}"></script>
+	<script src=" {{ URL::asset ('assets/js/functions.js')}}"></script>
     @livewireScripts
 </body>
 </html>

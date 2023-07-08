@@ -14,11 +14,11 @@
                     <div class="product-gallery">
                       <ul class="slides">
 
-                        <li data-thumb="{{ asset('assets/images/products/')}}/{{$product->image}}">
-                            <img src="{{ asset('assets/images/products/')}}/{{$product->image}}" alt="{{$product->name}}" />
+                        <li data-thumb=" {{ URL::asset('assets/images/products/')}}/{{$product->image}}">
+                            <img src=" {{ URL::asset('assets/images/products/')}}/{{$product->image}}" alt="{{$product->name}}" />
                         </li>
 
-                        
+
                       </ul>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         {{$product->short_description}}
                     </div>
                     <div class="wrap-social">
-                        <a class="link-socail" href="#"><img src="{{ asset('assets/images/social-list.png')}}" alt=""></a>
+                        <a class="link-socail" href="#"><img src=" {{ URL::asset('assets/images/social-list.png')}}" alt=""></a>
                     </div>
                     <div class="wrap-price"><span class="product-price">${{$product->regular_price}}</span></div>
                     <div class="stock-info in-stock">
@@ -84,21 +84,21 @@
                             </table>
                         </div>
                         <div class="tab-content-item " id="review">
-                            
+
                             <div class="wrap-review-form">
-                                
+
                                 <div id="comments">
                                     <h2 class="woocommerce-Reviews-title">01 review for <span>Radiant-360 R6 Chainsaw Omnidirectional [Orage]</span></h2>
                                     <ol class="commentlist">
                                         <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-20">
-                                            <div id="comment-20" class="comment_container"> 
-                                                <img alt="" src="{{ asset('assets/images/author-avata.jpg')}}" height="80" width="80">
+                                            <div id="comment-20" class="comment_container">
+                                                <img alt="" src=" {{ URL::asset('assets/images/author-avata.jpg')}}" height="80" width="80">
                                                 <div class="comment-text">
                                                     <div class="star-rating">
                                                         <span class="width-80-percent">Rated <strong class="rating">5</strong> out of 5</span>
                                                     </div>
-                                                    <p class="meta"> 
-                                                        <strong class="woocommerce-review__author">admin</strong> 
+                                                    <p class="meta">
+                                                        <strong class="woocommerce-review__author">admin</strong>
                                                         <span class="woocommerce-review__dash">–</span>
                                                         <time class="woocommerce-review__published-date" datetime="2008-02-14 20:00" >Tue, Aug 15,  2017</time>
                                                     </p>
@@ -113,7 +113,7 @@
 
                                 <div id="review_form_wrapper">
                                     <div id="review_form">
-                                        <div id="respond" class="comment-respond"> 
+                                        <div id="respond" class="comment-respond">
 
                                             <form action="#" method="post" id="commentform" class="comment-form" novalidate="">
                                                 <p class="comment-notes">
@@ -122,7 +122,7 @@
                                                 <div class="comment-form-rating">
                                                     <span>Your rating</span>
                                                     <p class="stars">
-                                                        
+
                                                         <label for="rated-1"></label>
                                                         <input type="radio" id="rated-1" name="rating" value="1">
                                                         <label for="rated-2"></label>
@@ -136,11 +136,11 @@
                                                     </p>
                                                 </div>
                                                 <p class="comment-form-author">
-                                                    <label for="author">Name <span class="required">*</span></label> 
+                                                    <label for="author">Name <span class="required">*</span></label>
                                                     <input id="author" name="author" type="text" value="">
                                                 </p>
                                                 <p class="comment-form-email">
-                                                    <label for="email">Email <span class="required">*</span></label> 
+                                                    <label for="email">Email <span class="required">*</span></label>
                                                     <input id="email" name="email" type="email" value="" >
                                                 </p>
                                                 <p class="comment-form-comment">
@@ -214,7 +214,7 @@
                             <div class="product product-widget-style">
                                 <div class="thumbnnail">
                                     <a href="{{route('product.details',['slug'=>$p_product->slug])}}" title="{{$p_product->name}}">
-                                        <figure><img src="{{ asset('assets/images/products/')}}/{{$p_product->image}}" alt="{{$p_product->name}}"></figure>
+                                        <figure><img src=" {{ URL::asset('assets/images/products/')}}/{{$p_product->image}}" alt="{{$p_product->name}}"></figure>
                                     </a>
                                 </div>
                                 <div class="product-info">
@@ -239,7 +239,7 @@
                         <div class="product product-style-2 equal-elem ">
                             <div class="product-thumnail">
                                 <a href="{{route('product.details',['slug'=>$r_product->slug])}}" title="{{$r_product->name}}">
-                                    <figure><img src="{{ asset('assets/images/products/')}}/{{$r_product->image}}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                                    <figure><img src=" {{ URL::asset('assets/images/products/')}}/{{$r_product->image}}" width="214" height="214" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                                 </a>
                                 <div class="group-flash">
                                     <span class="flash-item new-label">new</span>
