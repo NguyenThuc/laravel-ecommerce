@@ -15,6 +15,9 @@ open browse localhost:8000
 
 
 ## demo 
+
+http://livewire-ecommerce-14dc5a9d44fb.herokuapp.com/
+
 <img src="./screen.png" width="400">
 
 
