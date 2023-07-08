@@ -16,7 +16,7 @@ open browse localhost:8000
 
 ## demo 
 
-http://livewire-ecommerce-14dc5a9d44fb.herokuapp.com/
+https://ainote.com.au
 
 <img src="./screen.png" width="400">
 
